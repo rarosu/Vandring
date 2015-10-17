@@ -1,0 +1,3 @@
+A persistent text-based game based around crafting, skills, exploration and permanent death. Generate worlds and invite your friends to survive and explore in unknown lands and find what lies in the depths of the world...
+
+Vandring is made in the .NET MVC framework and is made as an exercise by the author to learn more about it. This project is under development and is in no way a finished (or even playable) product.
