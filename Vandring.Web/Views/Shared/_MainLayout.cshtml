@@ -6,8 +6,15 @@
   @Styles.Render("~/bundles/css/style")
 </head>
 <body>
-  <div>
-    <h1>Hello world from template</h1>
+  <div class="row">
+    <div class="col-md-11">
+      <h1>Vandring</h1>
+    </div>
+    <div class="col-md-1">
+      @Html.ActionLink("Logout", "Logout", "Auth")
+    </div>
+  </div>
+  <div class="row">
     @RenderBody()
   </div>
   @Scripts.Render("~/bundles/js/jquery")
