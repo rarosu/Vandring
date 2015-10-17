@@ -6,6 +6,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Routing;
 using System.Web.Optimization;
+using System.Web.Mvc;
 
 namespace Vandring.Web
 {
@@ -16,6 +17,7 @@ namespace Vandring.Web
         {
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
         }
 
         protected void Session_Start(object sender, EventArgs e)

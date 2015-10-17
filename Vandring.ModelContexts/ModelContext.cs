@@ -14,6 +14,12 @@ namespace Vandring.ModelContexts
         public DbSet<World> Worlds { get; set; }
         public DbSet<WorldMembership> WorldMemberships { get; set; }
 
+        public ModelContext()
+            : base("Vandring")
+        {
+
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

@@ -7,9 +7,9 @@ using System.Web.Mvc;
 namespace Vandring.Web.Controllers
 {
     [AllowAnonymous]
-    public class HomeController : Controller
+    public class RegisterController : Controller
     {
-        // GET: Home
+        // GET: Register
         public ActionResult Index()
         {
             return View();

@@ -11,7 +11,10 @@
       <h1>Vandring</h1>
     </div>
     <div class="col-md-1">
-      @Html.ActionLink("Logout", "Logout", "Auth")
+      @if (User.Identity.IsAuthenticated)
+      {
+          @Html.ActionLink("Logout", "Logout", "Auth")
+      }
     </div>
   </div>
   <div class="row">

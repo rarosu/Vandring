@@ -1,0 +1,12 @@
+﻿@model Vandring.Web.ViewModels.RegisterViewModel
+@{
+    Layout = "~/Views/Shared/_RegisterLayout.cshtml";
+}
+
+@Html.ValidationSummary(false)
+
+@using (Html.BeginForm("Register", "Auth"))
+{
+    @Html.EditorForModel()
+    <button type="submit">Login</button>
+}
